@@ -1,0 +1,1 @@
+run = "nix-env -iA nixpkgs.ffmpeg && nix-env -iA nixpkgs.nodejs-16_x.out && nix-env -iA nixpkgs.imagemagick && nix-env -iA nixpkgs.pm2 && nix-env -iA nixpkgs.ffmpeg.bin && pm2 start haruka.js && pm2 save && pm2 monit"
